@@ -1,9 +1,6 @@
 import { Server, Socket } from "socket.io";
 
 export interface ServerToClientEvents {
-    // noArg: () => void;
-    // basicEmit: (a: number, b: string, c: Buffer) => void;
-    // withAck: (d: string, callback: (e: number) => void) => void;
     messageSent: (nickname: string, message: string) => void;
     userJoinedChatroom: (nickname: string) => void;
     userLeftChatroom: (nickname: string) => void;
