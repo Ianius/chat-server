@@ -14,7 +14,7 @@ const server = http.createServer(app);
 const io: ChatServer = new Server(server, {
     cors: {
         // TODO: Change later
-        origin: "chat-client-brown.vercel.app",
+        origin: "https://chat-client-brown.vercel.app",
     }
 });
 
